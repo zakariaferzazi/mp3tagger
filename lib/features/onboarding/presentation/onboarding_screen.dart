@@ -281,24 +281,16 @@ class _OnboardingScreenState extends ConsumerState<OnboardingScreen> {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: Theme.of(context).colorScheme.primary,
-            boxShadow: const [
-              BoxShadow(color: Colors.white, blurRadius: 60, spreadRadius: 20),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.12),
+                blurRadius: 20,
+                spreadRadius: 2,
+                offset: const Offset(0, 8),
+              ),
             ],
           ),
-          child: Center(
-            child: Icon(
-              data.icon,
-              size: 120,
-              color: Colors.white,
-              shadows: const [
-                BoxShadow(
-                  color: Colors.white,
-                  blurRadius: 20,
-                  offset: Offset(0, 10),
-                ),
-              ],
-            ),
-          ),
+          child: Center(child: Icon(data.icon, size: 120, color: Colors.white)),
         ),
         const SizedBox(height: 64),
       ],

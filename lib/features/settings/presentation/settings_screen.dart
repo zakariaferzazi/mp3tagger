@@ -12,8 +12,8 @@ import 'package:mp3tageditor/core/widgets/main_app_bar.dart';
 import 'package:mp3tageditor/features/home/presentation/library_provider.dart';
 
 const _supportEmail = 'zakariaferzazi24.04.2000@gmail.com';
-const _androidPackageId = 'com.apps.audio.tag.editor';
-const _iosStoreId = '6763123220';
+const _androidPackageId = 'com.apps.mp3.tagger';
+const _iosStoreId = '6763816049';
 
 class SettingsScreen extends ConsumerWidget {
   const SettingsScreen({super.key});
